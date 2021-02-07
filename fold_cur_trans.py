@@ -21,7 +21,7 @@ import datetime
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='for face verification')
-    parser.add_argument("-ds", "--dataset_dir", help="where to get data", default="distinct", type=str)
+    parser.add_argument("-ds", "--dataset_dir", help="where to get data", default="noonan", type=str)
     parser.add_argument('-sd','--stored_result_dir',help='where to store data as np arrays',
                         default="results/trans/", type=str)
     parser.add_argument("-k", "--kfold", help="returns the number of splitting iterations in the cross-validator.", 
